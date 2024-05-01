@@ -10,10 +10,6 @@ const TransactionSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-    date: {
-      type: Date,
-      default: Date.now,
-    },
     value: {
       type: Number,
       required: true,
@@ -33,4 +29,4 @@ const TransactionSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-export default mongoose.Schema('Transaction', TransactionSchema);
+export default mongoose.model('Transaction', TransactionSchema);

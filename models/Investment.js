@@ -26,4 +26,4 @@ const InvestmentSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-export default mongoose.Schema('Investment', InvestmentSchema);
+export default mongoose.model('Investment', InvestmentSchema);
