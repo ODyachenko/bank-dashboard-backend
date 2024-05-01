@@ -25,6 +25,8 @@ const UserSchema = new mongoose.Schema(
     city: String,
     postalCode: String,
     country: String,
+    currency: String,
+    timeZone: String,
   },
   {
     timestamps: true,
