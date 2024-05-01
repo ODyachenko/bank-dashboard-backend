@@ -8,7 +8,7 @@ const CardSchema = new mongoose.Schema(
     },
     balance: {
       type: Number,
-      required: true,
+      default: 0,
     },
     number: {
       type: Number,
